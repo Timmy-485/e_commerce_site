@@ -1,0 +1,32 @@
+.cartSection{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 2rem;
+}
+.cartSection .bag{
+    background-color: green;
+}
+.cartSection .payment{
+    width: 100%;
+    /* display: grid;
+    grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr 1fr; */
+    background-color: white;
+    height: 35rem;
+    border: rgb(0, 43,92) solid 0.2rem;
+}
+.cartSection .payment .summary{
+    background-color: rgb(0, 43,92);
+    border: white solid;
+    min-height: 4rem;
+    
+    font-weight: 400;
+    display: block;
+}
+.cartSection .payment .summary #summary{
+    color: white;
+    
+}
+.cartSection .payment .summary p{
+    margin: 0;
+}

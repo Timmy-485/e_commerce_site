@@ -1,0 +1,318 @@
+* {
+    margin-top: 0;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0 0.2rem;
+    font-family: sans-serif !important;
+    overflow: visible;
+}
+
+header {
+    width: 100%;
+    height: 10rem;
+}
+
+header .headTop {
+    height: 2.5rem;
+    background-color: rgb(0, 43, 92);
+}
+
+.headerText {
+    font-size: 1rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.headerText p a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+header .headMid {
+    height: 5rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.logo {
+    margin: 0 40%;
+    max-height: 5rem;
+    padding-top: 1rem;
+}
+
+.logo img {
+    width: 100%;
+}
+
+header .headBottom {
+    max-height: 2.5rem;
+}
+
+.headerText {
+    color: white;
+}
+
+.topnav {
+    padding: 0.7rem 0;
+    text-align: center;
+}
+
+.topnav a {
+    color: #002b5c;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.6rem;
+    height: 7rem;
+    width: 4rem;
+}
+
+.topnav a:hover {
+    background-color: #0357b6;
+    color: white;
+}
+
+main .container {
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+main .container .img {
+    /* border: gray solid; */
+    width: 100%;
+}
+
+main .container .img img {
+    width: 100%;
+}
+
+.container .slide {
+    position: absolute;
+    top: 50%;
+}
+
+.content {
+    margin: 0 2rem;
+}
+
+.description {
+    width: 100%;
+    height: 3rem;
+    padding-top: 1rem;
+    color: rgb(0, 43, 92);
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-size: 1.4rem;
+}
+
+.moreInfo {
+    margin: 0;
+}
+
+.moreInfo p {
+    color: rgb(0, 43, 92);
+    font-weight: bold;
+}
+
+.moreInfo .price {
+    margin-top: 1rem;
+}
+
+.moreInfo div {
+    font-size: 0.8rem;
+}
+
+.moreInfo span {
+    color: red;
+}
+
+.topColor {
+    height: 1rem;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.color {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.colorSelect {
+    margin-top: 1rem;
+}
+
+.colorCircle {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.colorCircle:hover {
+    cursor: pointer;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: rgb(218, 210, 210);
+}
+
+.size {
+    display: inline;
+}
+
+.size .sizeBoxParent {
+    width: 50%;
+    height: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+
+}
+
+.size .sizeBoxParent select {
+    width: 5rem;
+    height: 2rem;
+}
+
+.size .sizeBoxParent input:hover {
+    background-color: #0357b6;
+    color: white;
+}
+
+.size .sizeBox a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.cartQuantity {
+    margin: 3rem 0;
+    height: 4rem;
+}
+
+.cartQuantity input {
+    width: 3rem;
+    height: 2rem;
+}
+
+.fas:hover {
+    cursor: pointer;
+}
+
+.addToCart {
+    width: 50%;
+    height: 9em;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.4rem;
+}
+
+.addToCart input {
+    width: 100%;
+    height: 100%;
+}
+
+.addToCart .add input {
+    background-color: rgb(0, 43, 92);
+    color: white;
+    font-weight: bold;
+}
+
+.addToCart .buy input {
+    color: rgb(0, 43, 92);
+}
+
+
+
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border: gray solid 0.01rem;
+
+}
+
+.sidepanel .closebtn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.sidepanel .closebtn:hover {
+    color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+.sidepanel .topmost{
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+.sidepanel .topmost p {
+    text-align: center;
+    color: white;
+    background-color: rgb(0,43,92);
+    height: 100%;
+    padding: 1rem;
+    margin: 0;
+}
+.sidepanel .itemDescription{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem
+}
+
+.sidepanel .itemDescription .smallImg #smallImg{
+    width: 100%;
+}
+
+.sidepanel .subTotal, .checkout{
+    width: 80%;
+    padding: 1rem;
+    background-color: rgb(0,43,92);
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.sidepanel .imgDescription .description{
+    margin-bottom: 1rem;
+}
+
+.sidepanel .checkout:hover{
+    cursor: pointer;
+    border: black solid;
+}
+
+.sidepanel .checkout a{
+    text-decoration: none;
+    color: white;
+}
