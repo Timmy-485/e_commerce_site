@@ -1,0 +1,58 @@
+.cartSection{
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    height: 100%;
+}
+
+.discount{
+    margin-left: 10%;
+}
+.cartSection .cartCheckout, .cartBag{
+    display: inline-block;
+}
+.cartSection .cartBag{
+    width: 70%;
+    /* height: 5rem; */
+    
+
+}
+.cartSection .cartCheckout{
+    width: 25%;
+    height: 70%;
+    float: right;
+ 
+}
+.orderSummary{
+    background-color: rgb(0, 43, 92);
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.orderSummary p{
+    margin-bottom: 0.2rem;
+    color: white;
+}
+#orderSum{
+    font-weight: bold;
+}
+
+.cartHead{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    padding: 1.75rem;
+    background-color: grey;
+}
+.cartBagInner{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    height: 10rem;
+}
+
+.cartBagInner #checkoutImg{
+    width: 100%;
+}
+
+.discount #coupon{
+    width: 3rem;
+}

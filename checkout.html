@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/beautify.css">
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <title>Checkout</title>
 </head>
 <body>
@@ -41,24 +41,59 @@
         </div>
     </header>
 
+    <div class="discount">
+        <input type="text" name="" id="coupon" maxlength="5" >
+        <input type="button" value="Apply Coupon" onclick="applyDiscount()">
+    </div>
     <div class="cartSection">
-        <div class="bag"></div>
-
-        <div class="payment">
-            <div class="summary">
-                <p id="summary">Order Summary</p>
-                <p><span id="no_of_items"></span> items</p>
+        <div class="cartBag" id="cartBag">
+            <div class="cartHead">
+                <div>Item</div>
+                <div>Item Description</div>
+                <div>Quantity</div>
+                <div>Unit Price</div>
+                <div>Total Price</div>
+                <div>Del</div>
             </div>
-            <div class="total"></div>
-            <div class="promo"></div>
-            <div class="checkout"></div>
+            <div class="cartBagInner" id="delMe">
+                <div class="del"><img src="" alt="" id="checkoutImg"></div>
+                <div class="del"> 
+                    <p id="itemName">Harbor Margo Shirt Dress</p>
+                    <p>Color: <span id="color"></span></p>
+                    <p>Quantity: <span id="quantity"></span></p>
+                    <p>Size: <span id="size"></span></p>
+                </div>
+                <div class="del">
+                    <input type="number" id="numberField" min="1" max="10.0" step="1.0" value="1">
+                    <input type="button" value="Update" onclick="updateQuantity()">
+                </div>
+                <div class="del">$148.00</div>
+                <div class="del"><span id="cartTotal"></span></div>
+                <div><i class="fas fa-trash" onclick="deleteAll()"></i></div>
+            </div>
+        </div>
+        
+
+        <div class="cartCheckout">
+            <div class="orderSummary">
+                <p id="orderSum">Order Summary</p>
+                <p>1 item in total</p>
+            </div>
+            <div class="cost">
+                <p>Subtotal: <span id="subTotal" class="value_right"></span></p>
+                <p>Discount: <span class="value_right" id="discount"></span></p>
+                <p>Total: <span id="totalCost" class="value_right"></span></p>
+            </div>
         </div>
     </div>
+
+    
 
 
 
 
     <script src="https://kit.fontawesome.com/123c704c20.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="js/checkout.js"></script>
 </body>
 </html>

@@ -85,17 +85,11 @@ main .container {
 }
 
 main .container .img {
-    /* border: gray solid; */
     width: 100%;
 }
 
 main .container .img img {
     width: 100%;
-}
-
-.container .slide {
-    position: absolute;
-    top: 50%;
 }
 
 .content {
