@@ -53,6 +53,26 @@
     width: 100%;
 }
 
-.discount #coupon{
-    width: 3rem;
+.discount1{
+    margin: 0;
+}
+.discount1 input{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+}
+
+#descriptionDiv{
+    padding: 1rem;
+}
+
+#quantityDiv{
+    padding: 2rem 1rem 2rem 0;
+}
+#quantityDiv input{
+    margin: 0.5rem;
+    
+}
+#priceDiv{
+    padding: 2rem;
 }

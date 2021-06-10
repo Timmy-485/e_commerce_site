@@ -41,10 +41,7 @@
         </div>
     </header>
 
-    <div class="discount">
-        <input type="text" name="" id="coupon" maxlength="5" >
-        <input type="button" value="Apply Coupon" onclick="applyDiscount()">
-    </div>
+    
     <div class="cartSection">
         <div class="cartBag" id="cartBag">
             <div class="cartHead">
@@ -57,17 +54,17 @@
             </div>
             <div class="cartBagInner" id="delMe">
                 <div class="del"><img src="" alt="" id="checkoutImg"></div>
-                <div class="del"> 
+                <div class="del" id="descriptionDiv"> 
                     <p id="itemName">Harbor Margo Shirt Dress</p>
                     <p>Color: <span id="color"></span></p>
                     <p>Quantity: <span id="quantity"></span></p>
                     <p>Size: <span id="size"></span></p>
                 </div>
-                <div class="del">
+                <div class="del" id="quantityDiv">
                     <input type="number" id="numberField" min="1" max="10.0" step="1.0" value="1">
                     <input type="button" value="Update" onclick="updateQuantity()">
                 </div>
-                <div class="del">$148.00</div>
+                <div class="del" id="priceDiv">$148.00</div>
                 <div class="del"><span id="cartTotal"></span></div>
                 <div><i class="fas fa-trash" onclick="deleteAll()"></i></div>
             </div>
@@ -83,6 +80,11 @@
                 <p>Subtotal: <span id="subTotal" class="value_right"></span></p>
                 <p>Discount: <span class="value_right" id="discount"></span></p>
                 <p>Total: <span id="totalCost" class="value_right"></span></p>
+
+            </div>
+            <div class="discount1">
+                <input type="text" placeholder="Enter 5 digit coupon" id="coupon" maxlength="5" >
+                <input type="button" value="Apply Coupon" onclick="applyDiscount()">
             </div>
         </div>
     </div>
